@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/user"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/email_et"
+            android:hint="Inserisci la tua e-mail"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:id="@+id/password_et"
+            android:hint="Inserisci una password"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:hint="Inserisci il tuo numero di telefono"
+            android:id="@+id/phone_utente"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+    <Button
+        android:id="@+id/registro_utente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrati"
+        android:textAlignment="center"
+        style="@style/rowstyle"/>
+</LinearLayout>
